@@ -1,7 +1,7 @@
-# Alfanous-java-wrapper
+Alfanous-java-wrapper
 =====================
 
-This is a client library for Java.
+This is a client library for Java (still in early stage for now).
 
 It allows you to get results from [Alfanous api](http://www.alfanous.org/jos2) just parsed for you and ready to consume in your java-based app.
 
