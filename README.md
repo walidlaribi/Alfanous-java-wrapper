@@ -26,19 +26,23 @@ yourQuery.getError(); // This returns an Error object that we defined in the mod
 
 ## contributing
 
-first install [maven](http://maven.apache.org/), clone this repository and then execute `mvn install` in order to install the project dependencies (we depend on a json library and junit for testing)
+First install [maven](http://maven.apache.org/), clone this repository and then execute `mvn install` in order to install the project dependencies (we depend on a json library and junit for testing)
 
 ### using eclipse
-just install [m2e plugin](https://www.eclipse.org/m2e/) then import the project as a Maven project, or execute
+
+Just install [m2e plugin](https://www.eclipse.org/m2e/) then import the project as a Maven project, or execute
 `mvn eclipse:eclipse` to generate an eclipse project (although the repository is already an eclipse project for now :) )
 
 ## testing
-run `mvn test` to launch the unit testing using junit (soon)
+Run `mvn test` to launch the unit testing using junit (soon)
 
 ## generate the JAR file
+A Jar file already exists in the `target` folder, you can import it directly in your app. if you want to generate a new updated one:
 * using maven: `mvn package`
 * using ant: `ant` or `ant jar`
 
+then check the `target` folder
+
 ## docs
-running `mvn site` will generate the docs under `target/site`, just open the `index.html` to read it.
+Running `mvn site` will generate the docs under `target/site`, just open the `index.html` to read it.
 
