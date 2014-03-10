@@ -8,7 +8,7 @@ import org.json.JSONObject;
 import org.alfanous.Models.*;
 
 public class AlFanousSearch {
-	Error error;
+	StatusMessage error;
 	SearchResults search;
 
 	public AlFanousSearch(String url) throws Exception {
@@ -16,7 +16,7 @@ public class AlFanousSearch {
 		JSONObject globalResultJSON = new JSONObject(readUrl(url));
 	    /**********Error*************************/
 	    JSONObject errorJSON = globalResultJSON.getJSONObject("error");
-	    Error resultsError = new Error(errorJSON.getString("msg"), errorJSON.getInt("code"));
+	    StatusMessage resultsError = new StatusMessage(errorJSON.getString("msg"), errorJSON.getInt("code"));
 	    this.error = resultsError;
 
 	    /************Search***********************/
@@ -129,7 +129,7 @@ public class AlFanousSearch {
 		this.search = searchItems;
 	}
 
-	public Error getError() {
+	public StatusMessage getError() {
 		return this.error;
 	}
 	public SearchResults getSearchResults() {

@@ -1,10 +1,10 @@
 package org.alfanous.Models;
 
-public class Error {
+public class StatusMessage {
 	String msg;
 	int code;
 
-	public Error(String msg, int code) {
+	public StatusMessage(String msg, int code) {
 		this.code = code;
 		this.msg = msg;
 	}

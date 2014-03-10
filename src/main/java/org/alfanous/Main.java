@@ -15,7 +15,7 @@ public class Main {
 			System.out.println("Entred try block ");
 			//The following line demonstrates how to search for the keyword الله using ElFanousSearch
 			AlFanousSearch query = new AlFanousSearch("http://www.alfanous.org/jos2?action=search&query=%D8%A7%D9%84%D9%84%D9%87");
-			Error queryError = query.getError();
+			StatusMessage queryError = query.getError();
 			SearchResults queryResults = query.getSearchResults();
 			System.out.println("Error : " + queryError.toString());
 			System.out.println("Ayas count = " + queryResults.getCount());
